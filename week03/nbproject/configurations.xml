@@ -12,6 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>average1.cpp</itemPath>
       <itemPath>bmi.cpp</itemPath>
       <itemPath>numbers.cpp</itemPath>
       <itemPath>odd_even.cpp</itemPath>
@@ -41,6 +42,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="average1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="bmi.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="numbers.cpp" ex="false" tool="1" flavor2="0">
@@ -74,6 +77,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="average1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="bmi.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="numbers.cpp" ex="false" tool="1" flavor2="0">
