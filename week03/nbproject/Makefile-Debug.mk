@@ -42,7 +42,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/odd_even.o \
 	${OBJECTDIR}/task2.o \
 	${OBJECTDIR}/task3.o \
-	${OBJECTDIR}/ticket.o
+	${OBJECTDIR}/ticket.o \
+	${OBJECTDIR}/while_choice.o \
+	${OBJECTDIR}/while_choice_1.o
 
 
 # C Compiler Flags
@@ -108,6 +110,16 @@ ${OBJECTDIR}/ticket.o: ticket.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ticket.o ticket.cpp
+
+${OBJECTDIR}/while_choice.o: while_choice.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/while_choice.o while_choice.cpp
+
+${OBJECTDIR}/while_choice_1.o: while_choice_1.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/while_choice_1.o while_choice_1.cpp
 
 # Subprojects
 .build-subprojects:

@@ -5,44 +5,44 @@
  */
 
 /* 
- * File:   averageNDW.cpp
+ * File:   while_choice_1.cpp
  * Author: k
  *
- * Created on 17 March 2016, 1:56 AM
+ * Created on 17 March 2016, 2:15 AM
  */
 
 #include <cstdlib>
 #include <iostream>
+
 using namespace std;
 
 /*
  * 
  */
-int main8(int argc, char** argv) {
-    double x;
+int main9(int argc, char** argv) {
+    int x;
     int count = 0; // (1) initialise a counter to 0 to count number of values
-    int N; // Number of values for which the average must be computed.
+    int choice; // This is the choice that controls the looping continuation or termination
     double sum = 0; // initialise the sum to 0 to make sure the sum at the beginning is 0
     double average;
-    // prompt the user:
-    cout << "Enter number of values, N, to be read in <Enter>:" << endl;
-    cin >> N;
-    if (N == 0) {//Needs to be here to stop people being assholes
-        cout << "You have entered 0 numbers, no average will be computed, bye \n";
-        return 0;//stop running the program here, otherwise do while loop begins
-    }
     do { // (2) read N grades and compute their sum, count ensures N entries
         // read each number and compute the sum:
         cout << "\n Enter a grade <Enter>: ";
         cin >> x;
         sum = sum + x;
         count++; // (3) update the count
-    } while (count < N);
-
-
-    average = average = sum / N;
-    cout << "The average of these " << N << " grades is " << average << endl;
+        // prompt the user:
+        cout << "Do you wish to enter another grade? (1 for yes and 0 or other key for no): "
+                << endl;
+        cin >> choice;
+        cout << "Why are you not waiting?";
+    } while (choice == 1);
+    if (count == 0)
+        cout << "You haven't entered any number, no average will be computed, bye \n";
+    else {
+        average = sum / count; //Notice that we have divided by count this time
+        cout << "The average of these " << count << " grades is " << average << endl;
+    }
     return 0;
 }
-
 
