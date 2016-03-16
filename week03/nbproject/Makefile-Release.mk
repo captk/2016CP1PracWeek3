@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/bmi.o \
 	${OBJECTDIR}/numbers.o \
 	${OBJECTDIR}/odd_even.o \
 	${OBJECTDIR}/task2.o \
@@ -60,11 +61,16 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/2016cp1pracweek3
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/week03
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/2016cp1pracweek3: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/week03: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/2016cp1pracweek3 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/week03 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/bmi.o: bmi.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/bmi.o bmi.cpp
 
 ${OBJECTDIR}/numbers.o: numbers.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -97,7 +103,7 @@ ${OBJECTDIR}/ticket.o: ticket.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/2016cp1pracweek3
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/week03
 
 # Subprojects
 .clean-subprojects:

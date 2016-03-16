@@ -16,10 +16,12 @@
 
 using namespace std;
 
-/*
- * 
+/* 
+ * While using netbeans, cout will sometimes not print anything to output
+ * This is possibly due to the OS not flushing to the correct window?
+ * Command line running doesn't have this problem, I find
  */
-int main(int argc, char** argv) {
+int main5(int argc, char** argv) {
     int userInput, remainder;
     
     cout << "Please enter your integer: ";
