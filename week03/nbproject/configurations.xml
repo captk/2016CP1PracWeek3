@@ -13,6 +13,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>average1.cpp</itemPath>
+      <itemPath>averageNDW.cpp</itemPath>
       <itemPath>bmi.cpp</itemPath>
       <itemPath>numbers.cpp</itemPath>
       <itemPath>odd_even.cpp</itemPath>
@@ -43,6 +44,8 @@
       <compileType>
       </compileType>
       <item path="average1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="averageNDW.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="bmi.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -78,6 +81,8 @@
         </asmTool>
       </compileType>
       <item path="average1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="averageNDW.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="bmi.cpp" ex="false" tool="1" flavor2="0">
       </item>

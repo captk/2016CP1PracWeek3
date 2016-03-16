@@ -18,7 +18,7 @@ using namespace std;
 /*
  * 
  */
-int main(int argc, char** argv) {
+int main7(int argc, char** argv) {
     int x;
     int count = 0; // (1) initialise a counter to 0 to count number of grades
     double sum = 0; // initialise the sum to 0 to make sure the sum at the beginning is 0

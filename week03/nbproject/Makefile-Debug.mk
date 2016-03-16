@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/average1.o \
+	${OBJECTDIR}/averageNDW.o \
 	${OBJECTDIR}/bmi.o \
 	${OBJECTDIR}/numbers.o \
 	${OBJECTDIR}/odd_even.o \
@@ -72,6 +73,11 @@ ${OBJECTDIR}/average1.o: average1.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/average1.o average1.cpp
+
+${OBJECTDIR}/averageNDW.o: averageNDW.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/averageNDW.o averageNDW.cpp
 
 ${OBJECTDIR}/bmi.o: bmi.cpp 
 	${MKDIR} -p ${OBJECTDIR}
