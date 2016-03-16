@@ -35,6 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/numbers.o \
+	${OBJECTDIR}/odd_even.o \
 	${OBJECTDIR}/task2.o \
 	${OBJECTDIR}/task3.o \
 	${OBJECTDIR}/ticket.o
@@ -63,6 +65,16 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/2016cp1pracweek3: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/2016cp1pracweek3 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/numbers.o: numbers.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/numbers.o numbers.cpp
+
+${OBJECTDIR}/odd_even.o: odd_even.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/odd_even.o odd_even.cpp
 
 ${OBJECTDIR}/task2.o: task2.cpp 
 	${MKDIR} -p ${OBJECTDIR}

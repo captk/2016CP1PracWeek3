@@ -19,7 +19,7 @@ using namespace std;
 /*
  * 
  */
-int main2(int argc, char** argv) {
+int main1(int argc, char** argv) {
     
     double age, ticket = 12;
     

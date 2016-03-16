@@ -10,7 +10,7 @@
  *
  * A. if(x == 1) y++;
  * B. -1
- * C. 
+ * C. 1
  * 
  * 
  * Created on 16 March 2016, 8:22 PM
@@ -24,8 +24,8 @@ using namespace std;
 /*
  * 
  */
-int main(int argc, char** argv) {
-    if (1 < -1) {
+int main3(int argc, char** argv) {
+    if (1 < -(-1)) {
         cout << "hello world";
     }
     return 0;
