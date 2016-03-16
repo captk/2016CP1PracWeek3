@@ -19,8 +19,8 @@ using namespace std;
 /*
  * 
  */
-int main9(int argc, char** argv) {
-    int x;
+int main(int argc, char** argv) {
+    double x;
     int count = 0; // (1) initialise a counter to 0 to count number of values
     int choice; // This is the choice that controls the looping continuation or termination
     double sum = 0; // initialise the sum to 0 to make sure the sum at the beginning is 0
