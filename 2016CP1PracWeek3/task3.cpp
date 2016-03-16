@@ -5,10 +5,15 @@
  */
 
 /* 
- * File:   ticket.cpp
+ * File:   task3.cpp
  * Author: k
  *
- * Created on 16 March 2016, 6:38 PM
+ * A. if(x == 1) y++;
+ * B. -1
+ * C. 
+ * 
+ * 
+ * Created on 16 March 2016, 8:22 PM
  */
 
 #include <cstdlib>
@@ -19,16 +24,10 @@ using namespace std;
 /*
  * 
  */
-int main2(int argc, char** argv) {
-    
-    double age, ticket = 12;
-    
-    cout << "Please enter the age \n";
-    cin >> age;
-    if (age <= 8 || age >= 65)
-        ticket = 6;
-    cout << "Your ticket costs " << ticket << endl;
-    
+int main(int argc, char** argv) {
+    if (1 < -1) {
+        cout << "hello world";
+    }
     return 0;
 }
 

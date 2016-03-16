@@ -35,6 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/task2.o \
+	${OBJECTDIR}/task3.o \
 	${OBJECTDIR}/ticket.o
 
 
@@ -61,6 +63,16 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/2016cp1pracweek3: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/2016cp1pracweek3 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/task2.o: task2.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/task2.o task2.cpp
+
+${OBJECTDIR}/task3.o: task3.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/task3.o task3.cpp
 
 ${OBJECTDIR}/ticket.o: ticket.cpp 
 	${MKDIR} -p ${OBJECTDIR}
